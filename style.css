@@ -35,8 +35,14 @@ body
     height: 200vh;
 }
 
-body, html{
+html,body
+{
     overflow-x: hidden;
+}
+
+body
+{
+    overflow-y: hidden;
 }
 
 button:hover
