@@ -35,9 +35,8 @@ body
     height: 200vh;
 }
 
-body div 
-{
-    overflow: hidden ;
+body, html{
+    overflow-x: hidden;
 }
 
 button:hover
@@ -328,6 +327,8 @@ header
     position: absolute;
     right: 30px;
     top: 730px;
+    padding-top: 100px;
+    margin-top: -80px;
 }
 
 .scroll-container p
@@ -374,7 +375,6 @@ header
     opacity: 1;
 }
 
-
 .notification *
 {
     margin-left: 10px;
@@ -395,18 +395,6 @@ header
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media (max-width: 939px)
