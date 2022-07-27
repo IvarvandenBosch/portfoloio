@@ -35,6 +35,11 @@ body
     height: 200vh;
 }
 
+body div 
+{
+    overflow: hidden ;
+}
+
 button:hover
 {
     cursor: pointer;
