@@ -40,6 +40,11 @@ html,body
     overflow-x: hidden;
 }
 
+html
+{
+    height: 200vh;
+}
+
 body
 {
     overflow-y: hidden;
