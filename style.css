@@ -32,17 +32,11 @@ body
 {
     background-color: var(--background-color1);
     overflow-x: hidden;
-    height: 200vh;
 }
 
 html,body
 {
     overflow-x: hidden;
-}
-
-html
-{
-    height: 300vh;
 }
 body
 {
@@ -286,7 +280,6 @@ header
 {
     text-align: center;
     background-color: var(--background-color2);
-    height: 200vh;
     margin: -10px;
 }
 
@@ -411,6 +404,7 @@ header
     display: flex;
     justify-content: center;
     margin-top: 100px;
+    padding-bottom: 300px;
 }
 
 .text-about
@@ -429,6 +423,7 @@ header
     right: 0;
     margin-top: -350px;
 }
+
 
 @media (max-width: 1187px)
 {
