@@ -435,6 +435,106 @@ header
     margin-top: -350px;
 }
 
+.project-container
+{
+    text-align: center;
+    margin-top: 300px;
+    padding-bottom: 100px;
+}
+
+.project-container .upper-text,
+.project-container .title-about
+{
+    color: var(--text-white);
+}
+
+.background
+{
+    background-color: var(--background-color2);
+}
+
+.projects
+{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    text-align: left;
+    padding-bottom: 200px;
+}
+
+.projects .card
+{
+    background-color: rgba(255, 255, 255, 0.048);
+    width: 300px;
+    padding-inline: 10px;
+    padding-bottom: 10px;
+    border-color: var(--accent-color);
+    border-width: 2px;
+    border-style: solid;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.projects .card h4
+{
+    color: var(--text-black);
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--accent-color);
+    width: 300px;
+    margin-left: -12px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.card a
+{
+    color: rgb(173, 173, 173);
+    margin-top: 10px;
+    transition: color .3s ease;
+}
+
+.card a:hover
+{
+    color: #1c1c1c;
+    transition: color .3s ease;
+}
+
+.projects .text
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer
+{
+    background-color: var(--background-color1);
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer h1
+{
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: var(--text-white);
+    text-align: center;
+}
+
+footer h2
+{
+    text-align: center;
+    color: var(--accent-color);
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
 
 @media (max-width: 1187px)
 {
