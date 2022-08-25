@@ -11,7 +11,7 @@
 <body>
     <!-- Navbar section -->
     <nav id="nav" class="navbar open">
-        <a href="#" onclick="dropDown()" class="toggle-button">
+        <a onclick="dropDown()" class="toggle-button">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
@@ -19,8 +19,8 @@
         <div class="navbar-links">
             <ul>
                 <li><a href="#">home</a></li>
-                <li><a href="#">about me</a></li>
-                <li><a href="#">projects</a></li>
+                <li><a href="#about">about me</a></li>
+                <li><a href="#projects">projects</a></li>
                 <li><a href="#">contact</a></li>
             </ul>
         </div>
@@ -34,7 +34,7 @@
         <div class="container-1">
             <h1 class="title"><a>Hi I am,<br></a>Ivar van den Bosch</h1>
             <h3>Front-end developer</h3>
-            <button>About me</button>
+            <button id="btn">About me</button>
         </div>
         <div class="container-2">
             <h2>Let's connect!</h2>
@@ -100,7 +100,7 @@
         <!-- bout sections -->
         <div class="about-container">
             <p class="upper-text">get to know a little</p>
-            <p class="title-about">About me</p>
+            <p id="about" class="title-about">About me</p>
             <div class="text-container">
                 <p class="text-about">I am Ivar van den Bosch, a front-end developer. I started with front-end when I was 14. My motivation for builing websites was mainly my interest for economics and also my love for css as I found that almost anything is possible with it.</p>
             </div>         
@@ -110,7 +110,7 @@
         <!-- Projects section -->
         <div class="project-container">
             <p class="upper-text">Let me show you my</p>
-            <p class="title-about">Projects</p>
+            <p id="projects" class="title-about">Projects</p>
             <div class="projects">
                 <div class="card">
                     <h4 class="project-title">Page Feedback</h4>

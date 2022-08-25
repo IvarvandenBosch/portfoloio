@@ -45,3 +45,9 @@ function scrollDown()
 {
     window.scrollTo(0, 4000);
 }
+
+let btn = document.getElementById('btn')
+
+btn.addEventListener("click", function(){
+    window.scrollTo(0, 980);
+})
