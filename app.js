@@ -51,3 +51,6 @@ let btn = document.getElementById('btn')
 btn.addEventListener("click", function(){
     window.scrollTo(0, 980);
 })
+
+let arrow = document.getElementById('arrow')
+let contact = document.getElementByIds('contact')

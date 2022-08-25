@@ -39,7 +39,7 @@
         <div class="container-2">
             <h2>Let's connect!</h2>
             <div class="collumn">
-                <input class="input" type="email" name="email" placeholder="eg. yourname@mail.con">
+                <input data-error="Invalid email adress." pattern="(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*)@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])" class="input" type="email" name="email" placeholder="eg. yourname@mail.com">
                 <input class="submit" type="submit" value="submit">
             </div>
         </div>
@@ -132,8 +132,16 @@
     </div>
 
     <footer>
-        <h2>Made with ❤️ by</h2>
-        <h1>Ivar van den Bosch</h1>
+            <h1>Ivar van den Bosch</h1>
+            <div class="contact">
+                <div class="flex">
+                <h2 class="contact-text">Contact</h2>
+                </div>
+                <input id="contact" type="text" name="name" placeholder="Name/Company">
+                <input id="contact" type="email" name="email" id="email" placeholder="yourname@email.com">
+                <textarea name="" id="contact" cols="30" rows="5"></textarea>
+        </div>
+        <p>"You don't always need a plan. <br>Sometimes you just need to breathe, trust, let go and see what happens." — Mandy Hale</p>
     </footer>
 </body>
 <script src="app.js"></script>
