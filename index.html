@@ -6,6 +6,7 @@
     <meta name='viewport' content='width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0' />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Ivar van den Bosch</title>
 </head>
 <body>
@@ -97,6 +98,9 @@
         </defs>
     </svg>
     <!-- Background fix -->
+    <div class="loader">
+        <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+    </div>
 
     <div class="background">
         <!-- About sections -->
@@ -197,16 +201,20 @@
     </div>
 
     <footer>
-            <h1>Ivar van den Bosch</h1>
-            <div class="contact">
-                <div class="flex">
-                <h2 class="contact-text">Contact</h2>
-                </div>
-                <input id="contact" type="text" name="name" placeholder="Name/Company">
-                <input id="contact" type="email" name="email" id="email" placeholder="yourname@email.com">
-                <textarea name="" id="contact" cols="30" rows="5"></textarea>
+        <h1>Ivar van den Bosch</h1>
+        <div class="contact">
+            <div class="flex">
+            <h2 class="contact-text">Contact</h2>
+            </div>
+            <input id="contact" type="text" name="name" placeholder="Name/Company">
+            <input id="contact" type="email" name="email" id="email" placeholder="yourname@email.com">
+            <textarea name="" id="contact" cols="30" rows="5"></textarea>
         </div>
     </footer>
 </body>
-<script src="app.js"></script>
+<script src="app.js">
+        $(window).on("load", function(){
+            $(".intro").fadeOut(slow)
+    });
+</script>
 </html>

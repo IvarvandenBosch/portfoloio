@@ -53,4 +53,8 @@ btn.addEventListener("click", function(){
 })
 
 let arrow = document.getElementById('arrow')
-let contact = document.getElementByIds('contact')
+let contact = document.getElementById('contact')
+
+$(window).on("load", function(){
+    $(".loader").fadeOut("slow")
+});
