@@ -99,14 +99,75 @@
     <!-- Background fix -->
 
     <div class="background">
-        <!-- bout sections -->
+        <!-- About sections -->
         <div class="about-container">
             <p class="upper-text">get to know a little</p>
             <p id="about" class="title-about">About me</p>
             <div class="text-container">
                 <p class="text-about">I am Ivar van den Bosch, a front-end developer. I started with front-end when I was 14. My motivation for builing websites was mainly my interest for economics and also my love for css as I found that almost anything is possible with it.</p>
+            </div>
+            <div class="lang-container">
+                <div class="col">
+                    <h3>Languages</h3>
+                    <section class="card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 9 6">
+                            <rect fill="#21468B"	width="9" height="6"/>
+                            <rect fill="#FFF" width="9" height="4"/>
+                            <rect fill="#AE1C28"	width="9" height="2"/>
+                        </svg>
+                        <div class="text-d">
+                            <h4>Dutch</h4>
+                            <p>Dutch is my mothertongue.</p>
+                        </div>
+                    </section>
+                    <section class="card">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="100" height="100">
+                            <clipPath id="s">
+                                <path d="M0,0 v30 h60 v-30 z"/>
+                            </clipPath>
+                            <clipPath id="t">
+                                <path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/>
+                            </clipPath>
+                            <g clip-path="url(#s)">
+                                <path d="M0,0 v30 h60 v-30 z" fill="#012169"/>
+                                <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/>
+                                <path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/>
+                                <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/>
+                                <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/>
+                            </g>
+                            </svg>                            
+                        <div class="text-d">
+                            <h4>English</h4>
+                            <p>I've been learning english since I was 7.</p>
+                        </div>
+                    </section>
+                </div>
+                <div class="c-lang-container border-l">
+                    <h3>My Skillset</h3>
+                    <section class="card">
+                        <img class="image" src="assets/js.png" alt="React" srcset="">
+                        <div class="text-d">
+                            <h4>React</h4>
+                            <p>I used React for my blog.</p>
+                        </div>
+                    </section>
+                    <section class="card">
+                        <img class="image" src="assets/tailwindcss.png" alt="tailwind" srcset="">
+                        <div class="text-d">
+                            <h4>Tailwind</h4>
+                            <p>I used Tailwind for my blog.</p>
+                        </div>
+                    </section>
+                    <section class="card">
+                        <img class="image css" src="assets/css.png" alt="css" srcset="">
+                        <div class="text-d">
+                            <h4>CSS</h4>
+                            <p>I'm very familiar with css.</p>
+                        </div>
+                    </section>
+                </div>
             </div>         
-        </div>   
+        </div>
         <textarea name="" id="text" cols="30" rows="10">oCarrott#8898</textarea>
         
         <!-- Projects section -->
@@ -115,19 +176,21 @@
             <p id="projects" class="title-about">Projects</p>
             <div class="projects">
                 <div class="card">
-                    <h4 class="project-title">Page Feedback</h4>
-                    <p class="text">Page feedback was a small project for myself which I could use and also others could use in the future. The javascript was still quite messy as I hadn’t really looked into it just yet but still had alot of inspiration for which I needed to use javascript for.</p>
-                    <a href="#">Github link</a>
+                    <h4 class="project-title">Blog</h4>
+                    <p class="text">For my blog I used nextJs and tailwind, combined with graphcms and graphql. It was a big learning step as I hadn't used next before and wasn't comfortable with databases either, but it helped me understand and process everything way better.</p>
+                    <div class="tooltip disabled">Github link
+                        <span class="tooltiptext">This repository is private</span>
+                    </div> <a href="https://ivarvandenbosch.vercel.app">Website link</a>
                 </div>
                 <div class="card">
                     <h4 class="project-title">The Wonder Server</h4>
                     <p class="text">The Wonder Server was a server with a 1:1 recreation of disney in minecraft. I had to design and build the website for the server. This was in the first year of my career as front-end developer.</p>
-                    <a href="#">Github link</a> <a href="#">Website link</a>
+                    <a href="https://github.com/The-Wonder-Server/Website">Github link</a> <a href="https://thewonderserver.com/home">Website link</a>
                 </div>
                 <div class="card">
-                    <h4 class="project-title">WondersMC</h4>
-                    <p class="text">WondersMc was an organisation that would take over other minecraft servers, which were had financial issues or any other reason. We would fix these servers so they can be upgraded. I made the site for the server following the wireframe/design I had been given.</p>
-                    <a href="#">Github link</a>
+                    <h4 class="project-title">Searchle</h4>
+                    <p class="text">Searchle is a project where I built a search bar in react. It had different features like learn more button and bolding the text that was inside the search bar. It was a fun experience and was usefull for so many other projects.</p>
+                    <a href="https://github.com/IvarvandenBosch/Searchle">Github link</a>
                 </div>
             </div>
         </div>

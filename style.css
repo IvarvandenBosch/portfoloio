@@ -302,6 +302,57 @@ header
     font-size: 18px;
 }
 
+.lang-container 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.lang-container h3
+{
+    color: var(--text-white);
+    font-family: sans-serif;   
+}
+
+.border-l
+{
+    border-left: solid;
+    border-color: var(--text-gray);
+    border-width: 2px;
+    padding-left: 20px;
+}
+
+.lang-container .card
+{
+    display: flex;
+    color: var(--text-white);
+    font-family: sans-serif;
+    margin-left: 10px;
+}
+
+.text-d
+{
+    text-align: left;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+.image {
+    width: 50px;
+    height: 45px;
+    margin-top: 25px;
+}
+
+.image.css
+{
+    width: 35px;
+    margin-top: 20px;
+    margin-right: 5px;
+}
+
 .link-container
 {
     position: absolute;
@@ -356,6 +407,8 @@ header
     margin-top: 50px;
     margin-left: 29px;
 }
+
+/* animate .notification */
 
 .notif-container{
     display: flex;
@@ -415,7 +468,7 @@ header
     display: flex;
     justify-content: center;
     margin-top: 100px;
-    padding-bottom: 300px;
+    padding-bottom: 200px;
 }
 
 .text-about
@@ -448,10 +501,14 @@ header
     color: var(--text-white);
 }
 
+/* sets background to light-gray */
+
 .background
 {
     background-color: var(--background-color2);
 }
+
+/* projects section */
 
 .projects
 {
@@ -500,7 +557,7 @@ header
 
 .card a:hover
 {
-    color: #1c1c1c;
+    color: #3a3a3a;
     transition: color .3s ease;
 }
 
@@ -510,14 +567,73 @@ header
     margin-bottom: 10px;
 }
 
+.disabled 
+{
+    text-decoration: line-through;
+    color: rgb(173, 173, 173);
+    margin-top: 10px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext 
+{
+    visibility: hidden;
+    width: 120px;
+    background-color: var(--accent-color);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+  
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    font-size: 11px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: var(--accent-color) transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+/* footer section */
+
 footer
 {
     background-color: var(--background-color1);
-    height: max-content;
+    height: 400px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 100px;
+    position: relative;
 }
 
 footer h1
@@ -557,6 +673,9 @@ footer h1::after
     margin-right: 100px;
     margin-bottom: 10px;
     margin-left: 100px;
+    position: absolute;
+    top: 80px;
+    padding-bottom: 10px;
 }
 
 .contact .flex
@@ -608,11 +727,24 @@ footer p
     margin-left: 3px;
 }
 
+/* responsive media queries */
+
 @media (max-width: 1187px)
 {
     .blob
     {
         margin-top: 50px;
+    }
+}
+
+@media (max-width: 400px) {
+    .contact
+    {
+        width: calc(100% - 60px);
+    }
+    .contact textarea
+    {
+        width: calc(100%);
     }
 }
 
@@ -739,6 +871,7 @@ footer p
     }
     .contact {
         margin-top: 30px;
+        left: -50px;
     }
 }
 
@@ -755,6 +888,20 @@ footer p
     .exclque
     {
         display: none;
+    }
+}
+
+@media (max-width: 682px){
+    .border-l {
+        border-left: none;
+        border-top: solid;
+        border-color: var(--text-gray);
+        border-width: 2px;
+    }
+
+    .border-l h3
+    {
+        padding-top: 30px;
     }
 }
 
