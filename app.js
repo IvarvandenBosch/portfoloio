@@ -26,19 +26,9 @@ function githubRedirect(){
 
 let notif = document.getElementById('notif')
 
-function discordCopy(){
-  var copyText = document.getElementById("text");
+function openDiscord(){
 
-  copyText.select();
-
-  //Mobile 
-  copyText.setSelectionRange(0, 99999);
-
-  navigator.clipboard.writeText(copyText.value);
-  notif.classList.add('animation')
-  setTimeout(function(){ 
-    notif.classList.remove('animation')
-   }, 2000)
+    location.href = 'discord://-/users/352822564793483265'
 }
 
 function scrollDown()
