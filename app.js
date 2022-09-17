@@ -26,8 +26,11 @@ function githubRedirect(){
 
 let notif = document.getElementById('notif')
 
-function discordCopy(){
-  var copyText = document.getElementById("text");
+function openDiscord(){
+
+    location.href = 'discord://-/users/352822564793483265'
+  //fuck ur overrated code <3
+  /*var copyText = document.getElementById("text");
 
   copyText.select();
 
@@ -38,7 +41,7 @@ function discordCopy(){
   notif.classList.add('animation')
   setTimeout(function(){ 
     notif.classList.remove('animation')
-   }, 2000)
+   }, 2000)*/
 }
 
 function scrollDown()
