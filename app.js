@@ -58,3 +58,25 @@ let contact = document.getElementById('contact')
 $(window).on("load", function(){
     $(".loader").fadeOut("slow")
 });
+
+const buttons = document.querySelectorAll('.button-ripple')
+
+buttons.forEach(btn => {
+    btn.addEventListener('click', function(e) {
+        let x = e.pageX - e.currentTarget.offsetLeft;
+        let y = e.pageY - e.currentTarget.offsetTop;
+        console.log(x, y)
+
+        let ripples = document.createElement('span');
+        ripples.classList.add("ripple")
+
+        ripples.style.left = x + 'px'
+        ripples.style.top = y + 'px'
+        
+        this.appendChild(ripples)
+
+        setTimeout(() => {  
+            ripples.remove()
+        },700)
+    })
+});

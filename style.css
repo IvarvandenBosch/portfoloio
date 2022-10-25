@@ -48,6 +48,8 @@ button:hover
     cursor: pointer;
 }
 
+/* Navbar section */
+
 nav
 {
     position: fixed;
@@ -151,7 +153,7 @@ nav
     pointer-events: none;
 }
 
-/* loader section */
+/* Loader section */
 .loader {
     background-color: var(--background-color1);
     position: fixed;
@@ -204,7 +206,7 @@ nav
   }
 }
 
-/* header section */
+/* Header section */
 
 header
 {
@@ -323,13 +325,14 @@ header
     color: var(--text-white);
 }
 
-/* about me section */
 
 .wave
 {
     margin-top: 200px;
     z-index: 100000;
 }
+
+/* About me section */
 
 .about-container
 {
@@ -387,6 +390,48 @@ header
     color: var(--text-white);
     font-family: sans-serif;
     margin-left: 10px;
+}
+
+.c-lang-container .card{
+    cursor: pointer;
+    padding: 0px 7px 30px 15px;
+    border-radius: 10px;
+}
+
+.c-lang-container .card:hover {
+    background-color: rgba(255, 255, 255, 0.342);
+}
+
+.button-ripple {
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.ripple
+{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 50%;
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    animation: animate .8s linear infinite;
+    z-index: 1000;
+}
+
+@keyframes animate {
+    0% {
+        width: 0px;
+        height: 0px;
+        opacity: 0.5;
+    }
+    100% {
+        width: 600px;
+        height: 600px;
+        opacity: 0;
+    }
 }
 
 .text-d
@@ -464,7 +509,7 @@ header
     margin-left: 29px;
 }
 
-/* animate .notification */
+/* Animate .notification */
 
 .notif-container{
     display: flex;
@@ -557,14 +602,14 @@ header
     color: var(--text-white);
 }
 
-/* sets background to light-gray */
+/* Sets background to light-gray */
 
 .background
 {
     background-color: var(--background-color2);
 }
 
-/* projects section */
+/* Projects section */
 
 .projects
 {
@@ -645,7 +690,8 @@ header
     padding: 5px 0;
     border-radius: 6px;
   
-    /* Position the tooltip text */
+/* Position the tooltip text */
+
     position: absolute;
     z-index: 1;
     bottom: 125%;
@@ -655,7 +701,8 @@ header
     color: rgb(0, 0, 0);
     font-weight: bold;
   
-    /* Fade in tooltip */
+/* Fade in tooltip */
+
     opacity: 0;
     transition: opacity 0.3s;
 }
@@ -679,12 +726,12 @@ header
     transition: opacity 0.3s;
 }
 
-/* footer section */
+/* Footer section */
 
 footer
 {
     background-color: var(--background-color1);
-    height: 400px;
+    height: 500px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -783,7 +830,7 @@ footer p
     margin-left: 3px;
 }
 
-/* responsive media queries */
+/* Responsive media queries */
 
 @media (max-width: 1187px)
 {
@@ -923,7 +970,7 @@ footer p
     footer h1
     {
         margin-top: 50px;
-        margin-left: 60px;
+        margin-left: 40px;
     }
     .contact {
         margin-top: 30px;
@@ -960,6 +1007,8 @@ footer p
         padding-top: 30px;
     }
 }
+
+/* Copied discord textarea set to invisible */
 
 #text{
     display: none;
