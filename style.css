@@ -730,23 +730,18 @@ header
 
 footer
 {
-    background-color: var(--background-color1);
-    height: 500px;
+    background-color: var(--accent-color);
+    height: 50px;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 100px;
-    position: relative;
 }
 
-footer h1
+footer h2
 {
-    text-transform: uppercase;
     font-family: sans-serif;
+    font-weight: 400;
     color: var(--text-white);
-    margin-left: 100px;
-    font-size: clamp(.5rem, 10vw, 2rem); 
-    margin-top: 100px;
+    text-align: center;
+    padding-top: 10px;
 }
 
 footer p
