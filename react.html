@@ -13,68 +13,69 @@
     <div class="loader">
         <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
     </div>
-    <!-- Navbar section -->
-    <nav id="nav" class="navbar open">
-        <a onclick="dropDown()" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-        <div class="navbar-links">
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="index.html#about">about me</a></li>
-                <li><a href="index.html#projects">projects</a></li>
-                <li><a href="#">contact</a></li>
-            </ul>
+
+        <!-- Navbar section -->
+        <nav id="nav" class="navbar open">
+            <a onclick="dropDown()" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="index.html#about">about me</a></li>
+                    <li><a href="index.html#projects">projects</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- article section -->
+        <article>
+            <h1>React</h1>
+            <p>
+                When I first started, I saw react as a big step towards becoming a web developer. I saw the options and loved the reusibility. I wanted to learn it as soon as I could.
+                I followed multiple courses and used NextJs for one of the biggest projects I had done until then. I also came across <a href="tailwind.html">tailwind</a> and was immediatly impressed by it's efficiency and how custimizable it was.
+                My experience with React or NextJs is currently <span id="exp-time"></span>.
+
+            </p>
+        </article>
+        <div class="projtitle">
+            <h1>Projects related to React/NextJs</h1>
+            <section class="projects">
+                <div class="card">
+                    <h4 class="project-title">Blog</h4>
+                    <p class="text">For my blog I used nextJs and tailwind, combined with graphcms and graphql. It was a big learning step as I hadn't used next before and wasn't comfortable with databases either, but it helped me understand and process everything way better.</p>
+                    <div class="tooltip disabled">Github link
+                        <span class="tooltiptext">This repository is private</span>
+                    </div> <a href="https://ivarvandenbosch.vercel.app">Website link</a>
+                </div>
+                <div class="card">
+                    <h4 class="project-title">BetterSubtitles</h4>
+                    <p class="text">BetterSubtitles was one of the major projects I worked on, I designed it and worked together with someone from the team to create the ideal subtitle experience, for this we used NextJS and also Tailwind, which made the process very efficient.</p>
+                    <div class="tooltip disabled">Github link
+                        <span class="tooltiptext">This repository is private</span>
+                    </div> <a href="https://bettersubtitles.com">Website link</a>
+                </div>
+                <div class="card">
+                    <h4 class="project-title">Multiplication Practice</h4>
+                    <p class="text">This project was a side project built with NextJs, the main reason for te creation of this site was to practice with site montitization and SEO. We added some ads to the site and made the SEO as best as we could. It was a very fun side project.</p>
+                    <div class="tooltip disabled">Github link
+                        <span class="tooltiptext">This repository is private</span>
+                    </div><a href="https://bennjoe.com/">Website link</a>
+                </div>
+                <div class="card">
+                    <h4 class="project-title">Searchle</h4>
+                    <p class="text">Searchle is a project where I built a search bar in react. It had different features like learn more button and bolding the text that was inside the search bar. It was a fun experience and was usefull for so many other projects.</p>
+                    <a href="https://github.com/IvarvandenBosch/Searchle">Github link</a>
+                </div>
+            </section>
         </div>
-    </nav>
-    <!-- article section -->
-    <article>
-        <h1>React</h1>
-        <p>
-            When I first started, I saw react as a big step towards becoming a web developer. I saw the options and loved the reusibility. I wanted to learn it as soon as I could.
-            I followed multiple courses and used NextJs for one of the biggest projects I had done until then. I also came across <a href="tailwind.html">tailwind</a> and was immediatly impressed by it's efficiency and how custimizable it was.
-            My experience with React or NextJs is currently <span id="exp-time"></span>.
 
-        </p>
-    </article>
-    <div class="projtitle">
-        <h1>Projects related to React/NextJs</h1>
-        <section class="projects">
-            <div class="card">
-                <h4 class="project-title">Blog</h4>
-                <p class="text">For my blog I used nextJs and tailwind, combined with graphcms and graphql. It was a big learning step as I hadn't used next before and wasn't comfortable with databases either, but it helped me understand and process everything way better.</p>
-                <div class="tooltip disabled">Github link
-                    <span class="tooltiptext">This repository is private</span>
-                </div> <a href="https://ivarvandenbosch.vercel.app">Website link</a>
-            </div>
-            <div class="card">
-                <h4 class="project-title">BetterSubtitles</h4>
-                <p class="text">BetterSubtitles was one of the major projects I worked on, I designed it and worked together with someone from the team to create the ideal subtitle experience, for this we used NextJS and also Tailwind, which made the process very efficient.</p>
-                <div class="tooltip disabled">Github link
-                    <span class="tooltiptext">This repository is private</span>
-                </div> <a href="https://bettersubtitles.com">Website link</a>
-            </div>
-            <div class="card">
-                <h4 class="project-title">Multiplication Practice</h4>
-                <p class="text">This project was a side project built with NextJs, the main reason for te creation of this site was to practice with site montitization and SEO. We added some ads to the site and made the SEO as best as we could. It was a very fun side project.</p>
-                <div class="tooltip disabled">Github link
-                    <span class="tooltiptext">This repository is private</span>
-                </div><a href="https://bennjoe.com/">Website link</a>
-            </div>
-            <div class="card">
-                <h4 class="project-title">Searchle</h4>
-                <p class="text">Searchle is a project where I built a search bar in react. It had different features like learn more button and bolding the text that was inside the search bar. It was a fun experience and was usefull for so many other projects.</p>
-                <a href="https://github.com/IvarvandenBosch/Searchle">Github link</a>
-            </div>
-        </section>
-    </div>
-
-    <!-- Footer section -->
-    <footer>
-        <h2>Ivar van den Bosch</h2>
-    </footer>
+        <!-- Footer section -->
+        <footer>
+            <h2>Ivar van den Bosch</h2>
+        </footer>
 </body>
 </html>
 <script src="react.js"></script>

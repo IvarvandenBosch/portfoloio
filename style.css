@@ -59,6 +59,8 @@ nav
 .navbar
 {
     display: flex;
+    width: 100vw;
+    max-width: inherit;
     justify-content: center;
     align-self: center;
     color: var(--text-white);
@@ -330,6 +332,8 @@ header
 {
     margin-top: 200px;
     z-index: 100000;
+    width: 1920px; 
+    height: 454px;
 }
 
 /* About me section */
@@ -788,6 +792,11 @@ footer p
     margin-left: 3px;
 }
 
+.gap {
+    display: flex;
+    gap: 10px;
+}
+
 /* Responsive media queries */
 
 @media (max-width: 1187px)
@@ -966,6 +975,19 @@ footer p
     }
 }
 
+@media (min-width: 2000px) {
+    .wave {
+        display: none;
+    }
+
+    .about-container {
+        margin-top: 800px;
+        padding-top: 20px;
+    }
+    .arrow {
+        display: none;
+    }
+}
 /* Copied discord textarea set to invisible */
 
 #text{

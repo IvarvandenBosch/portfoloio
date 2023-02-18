@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Notes",
+        "description": "One of my first bigger projects I worked on was notes, it was very fun to work on as I learned a lot about firstoreDB and React. I also added an anonymouse feature for people that werent interested in storing them on their account but did want to use/ test it.",
+        "github": "https://github.com/IvarvandenBosch/notes-app",
+        "website": "https://private-notes.vercel.app/"
+    },
+    {
+        "title": "Quotebook",
+        "description": "Quotebook is a React site with firestoreDB, I was inspired by a friend who wrote all of the funny things we said down in a whatsapp group, so he told me to create a website in which you can share all the funny things your friends say. It was really fun to make and also very entertaining to read through.",
+        "github": "none",
+        "website": "http://quotesbook.vercel.app/"
+    },
+    {
+        "title": "Sea-battle",
+        "description": "Sea-battle is based off of a boardgame I played when I was younger, my uncle inspired me to recreate this game so you could fight against a computer. The computer system definetly is far from perfect. It was very challenging and maybe even a littlebit too challengin but still totally worth the time.",
+        "github": "https://github.com/IvarvandenBosch/sea-battle",
+        "website": "none"
+    }
+]

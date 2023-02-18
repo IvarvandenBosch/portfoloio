@@ -1,6 +1,9 @@
 let toggleButton = document.getElementsByClassName('toggle-button')[0]
 let navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
+// Amount of projects displayed
+const projectAmount = 3
+
 function dropDown() {
     navbarLinks.classList.toggle('open')
     toggleButton.classList.toggle('open')
@@ -80,3 +83,90 @@ buttons.forEach(btn => {
         },700)
     })
 });
+
+const projectContainer = document.querySelector(".projects")
+
+async function fetchData() {
+    try {
+      const response = await fetch("./projects.json");
+      const data = await response.json();
+      displayProjects(data);
+    } catch (error) {
+      console.error(error);
+    }
+  }
+  
+  function displayProjects(projects) {
+    const projectContainer = document.querySelector(".projects");
+    const projectAmount = projects.length;
+    
+    for (let i = 0; i < projectAmount; i++) {
+      const currentProject = projects[i];
+  
+      // Create the card element
+      const card = document.createElement("div");
+      card.classList.add("card");
+      
+      // Add the project title
+      const title = document.createElement("h4");
+      title.classList.add("project-title");
+      title.textContent = currentProject.title;
+      card.appendChild(title);
+      
+      // Add the project description
+      const description = document.createElement("p");
+      description.classList.add("text");
+      description.textContent = currentProject.description;
+      card.appendChild(description);
+      
+      // Add the tooltip element
+      const section = document.createElement("div")
+      section.classList.add("gap")
+
+      if (currentProject.github === "none") {
+        const tooltip = document.createElement("div");
+        tooltip.classList.add("tooltip");
+        tooltip.classList.add("disabled");
+        tooltip.textContent = "Github link";
+  
+        // Add the tooltip text element
+        const tooltipText = document.createElement("span");
+        tooltipText.classList.add("tooltiptext");
+        tooltipText.textContent = "This repository is private";
+        tooltip.appendChild(tooltipText);
+  
+        section.appendChild(tooltip);
+      } else {
+        const githubLink = document.createElement("a");
+        githubLink.href = currentProject.github;
+        githubLink.textContent = "Github link";
+        section.appendChild(githubLink);
+      }
+      
+      // Add the website link
+      if (currentProject.website === "none") { 
+        const tooltip = document.createElement("div");
+        tooltip.classList.add("tooltip");
+        tooltip.classList.add("disabled");
+        tooltip.textContent = "Website link";
+  
+        // Add the tooltip text element
+        const tooltipText = document.createElement("span");
+        tooltipText.classList.add("tooltiptext");
+        tooltipText.textContent = "This website doesn't exist";
+        tooltip.appendChild(tooltipText);
+        section.appendChild(tooltip);
+      } else {
+        const websiteLink = document.createElement("a");
+        websiteLink.href = currentProject.website;
+        websiteLink.textContent = "Website link";
+        section.appendChild(websiteLink);
+      }
+      
+      card.append(section)
+      
+      projectContainer.appendChild(card);
+    }
+  }
+  
+  fetchData();
