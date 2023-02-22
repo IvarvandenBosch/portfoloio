@@ -5,32 +5,32 @@ let navbarLinks = document.getElementsByClassName('navbar-links')[0]
 const projectAmount = 3
 
 function dropDown() {
-    navbarLinks.classList.toggle('open')
-    toggleButton.classList.toggle('open')
+  navbarLinks.classList.toggle('open')
+  toggleButton.classList.toggle('open')
 }
 
 window.addEventListener("scroll", function(){
-    let offset = window.pageYOffset;
-    if (offset > 900)
-    {
-        document.getElementById('nav').style.background = "var(--background-color2)"
-        document.getElementById('nav').style.boxShadow = "none"
-    }
-    else if (offset < 900)
-    {
-        document.getElementById('nav').style.background = "var(--background-color1)"
-        document.getElementById('nav').style.boxShadow = "10px 14px 30px var(--background-color1-light);"
-    }
+  let offset = window.pageYOffset;
+  if (offset > 900)
+  {
+    document.getElementById('nav').style.background = "var(--background-color2)"
+    document.getElementById('nav').style.boxShadow = "none"
+  }
+  else if (offset < 900)
+  {
+    document.getElementById('nav').style.background = "var(--background-color1)"
+    document.getElementById('nav').style.boxShadow = "10px 14px 30px var(--background-color1-light);"
+  }
 })
 
 function githubRedirect(){
-    location.href = 'https://github.com/ivarvandenBosch'
+  location.href = 'https://github.com/ivarvandenBosch'
 }
 
-let notif = document.getElementById('notif')
+const notif = document.getElementById('notif')
 
 function discordCopy(){
-  var copyText = document.getElementById("text");
+  const copyText = document.getElementById("text");
 
   copyText.select();
 
@@ -170,3 +170,16 @@ async function fetchData() {
   }
   
   fetchData();
+  const emailInput = document.querySelector("#input-email")
+
+  document.querySelector("#submit-email").addEventListener('click', (e) => {
+    e.preventDefault()
+    if (emailInput.value === "") {
+      console.log('no email')
+      return
+    } else {
+      location.href = "contact.html"
+      console.log(`${emailInput.value} is your email!`)
+    }
+    localStorage.setItem('email', `${emailInput.value}`);
+  })

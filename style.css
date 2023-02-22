@@ -288,6 +288,7 @@ header
     background-color: var(--text-black);
     color: var(--text-white);
     margin-top: 10px;
+    border-radius: 0;
 }
 
 .container-2 .submit:hover
@@ -312,7 +313,7 @@ header
 
 ::selection {
     color: var(--accent-color);
-    background: var(--accent-color);
+    background-color: #ff88005e;
 }
 
 .arrow

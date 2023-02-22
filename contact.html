@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Ivar van den Bosch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="contact.css">
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("NjCWM2PgKh6sX1vsO");
+   })();
+</script>
+
+</head>
+<body>
+    <!-- Navbar section -->     
+    <nav id="nav" class="navbar open">
+        <a onclick="dropDown()" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="#about">about me</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="loader">
+        <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+    </div>
+    <main>
+        <div class="half-one">
+            <h1>Contact me!</h1>
+            <span class="mail">@</span>
+            <span class="star">*</span>
+        </div>
+        <div class="contact-form">
+            <form action="https://getform.io/f/7c7480e3-7f6b-46ef-9512-7b042fee735c" method="POST">
+                <h2>Contact</h2>
+                <input type="text" name="name" id="input-name" placeholder="Name/Company">
+                <input type="emai" name="email" id="input-email" placeholder="E-mail">
+                <input type="text" name="subject" id="input-subject" placeholder="Subject">
+                <textarea name="message" id="ta-message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <section>
+                    <button class="submit" id="submit" type="submit">Submit</button>
+                </section>
+            </form>
+        </div>
+    </main>
+</body>
+<script src="contact.js"></script>
+</html>
