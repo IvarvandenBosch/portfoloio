@@ -170,16 +170,15 @@ async function fetchData() {
   }
   
   fetchData();
-  const emailInput = document.querySelector("#input-email")
-
+  const emailInput = document.querySelector("#input-email");
+  const emailRegx = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
   document.querySelector("#submit-email").addEventListener('click', (e) => {
-    e.preventDefault()
-    if (emailInput.value === "") {
-      console.log('no email')
-      return
+    e.preventDefault();
+    if (emailInput.value === "" || !emailRegx.test(emailInput.value)) {
+     alert('not a valid email');
+      return;
     } else {
-      location.href = "contact.html"
-      console.log(`${emailInput.value} is your email!`)
+      location.href = "contact.html";
     }
     localStorage.setItem('email', `${emailInput.value}`);
-  })
+  });
