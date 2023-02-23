@@ -118,7 +118,7 @@ async function fetchData() {
       // Add the project description
       const description = document.createElement("p");
       description.classList.add("text");
-      description.textContent = currentProject.description + " " + i;
+      description.textContent = currentProject.description;
       card.appendChild(description);
       
       // Add the tooltip element
