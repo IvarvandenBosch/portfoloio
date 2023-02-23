@@ -45,12 +45,13 @@
             <span class="star">*</span>
         </div>
         <div class="contact-form">
-            <form action="https://getform.io/f/7c7480e3-7f6b-46ef-9512-7b042fee735c" method="POST">
+            <form action="https://getform.io/f/7c7480e3-7f6b-46ef-9512-7b042fee735c" method="POST" onsubmit="return validateEmail();" onchange="resetFormStyle()">
                 <h2>Contact</h2>
                 <input type="text" name="name" id="input-name" placeholder="Name/Company">
                 <input type="emai" name="email" id="input-email" placeholder="E-mail">
                 <input type="text" name="subject" id="input-subject" placeholder="Subject">
                 <textarea name="message" id="ta-message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <span class="form-valididity"></span>
                 <section>
                     <button class="submit" id="submit" type="submit">Submit</button>
                 </section>

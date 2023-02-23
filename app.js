@@ -96,12 +96,14 @@ async function fetchData() {
     }
   }
   
+
   function displayProjects(projects) {
     const projectContainer = document.querySelector(".projects");
-    const projectAmount = projects.length;
+    const topProjects = projects.slice(0, projectAmount);
+    console.log(topProjects)
     
-    for (let i = 0; i < projectAmount; i++) {
-      const currentProject = projects[i];
+    topProjects.forEach((proj, i) => { 
+    const currentProject = projects[i];
   
       // Create the card element
       const card = document.createElement("div");
@@ -116,7 +118,7 @@ async function fetchData() {
       // Add the project description
       const description = document.createElement("p");
       description.classList.add("text");
-      description.textContent = currentProject.description;
+      description.textContent = currentProject.description + " " + i;
       card.appendChild(description);
       
       // Add the tooltip element
@@ -166,19 +168,27 @@ async function fetchData() {
       card.append(section)
       
       projectContainer.appendChild(card);
-    }
+   })
+      
   }
   
   fetchData();
+  
   const emailInput = document.querySelector("#input-email");
   const emailRegx = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
   document.querySelector("#submit-email").addEventListener('click', (e) => {
     e.preventDefault();
     if (emailInput.value === "" || !emailRegx.test(emailInput.value)) {
-     alert('not a valid email');
+      emailInput.style.border = 'red 2px solid'
+      emailInput.style.backgroundColor = "#d420207e"
       return;
     } else {
       location.href = "contact.html";
     }
     localStorage.setItem('email', `${emailInput.value}`);
   });
+
+  function resetInputStyle() {
+    emailInput.style.border = '#fff 2px solid'
+    emailInput.style.backgroundColor = "transparent"
+  }
