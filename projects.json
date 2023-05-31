@@ -13,7 +13,7 @@
     },
     {
         "title": "City-Master",
-        "description": "City-Master is a game built in collaboration with a friend, it is a strategy game where you build a city whilst riding around in a car, many obstacles maay get in your way and will reduce your earnings per second.",
+        "description": "City-Master is a React game built in collaboration with a friend, it is a strategy game where you build a city whilst riding around in a car, many obstacles maay get in your way and will reduce your earnings per second. Utilize roads to get around quickly.",
         "github": "https://github.com/IvarvandenBosch/city-master",
         "website": "none"
     }
