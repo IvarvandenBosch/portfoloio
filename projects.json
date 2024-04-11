@@ -9,7 +9,7 @@
         "title": "Quotebook",
         "description": "Quotebook is a React site with firestoreDB, I was inspired by a friend who wrote all of the funny things we said down in a whatsapp group, so he told me to create a website in which you can share all the funny things your friends say. It was really fun to make and also very entertaining to read through.",
         "github": "none",
-        "website": "http://quotesbook.vercel.app/"
+        "website": "http://quotebook-v2.vercel.app/"
     },
     {
         "title": "City-Master",
